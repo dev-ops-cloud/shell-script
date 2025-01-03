@@ -28,7 +28,7 @@ then
 else
           echo "MySQL already.... INSTALLED"
      exit 1
-     else 
+     
            echo "Installing MySQL....SUCCESS"   
      fi
 
