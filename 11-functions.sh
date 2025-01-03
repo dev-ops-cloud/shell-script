@@ -3,7 +3,6 @@
 USERID=$(id -u)
 
 VALIDATE(){
-
      if [ $1 -ne 0 ] 
      then 
         echo "$2 ....FAILURE"
@@ -27,14 +26,9 @@ then
      VALIDATE $? "Installing MySQL"
 else
           echo "MySQL already.... INSTALLED"
-     exit 1
-     
-           echo "Installing MySQL....SUCCESS"   
-     fi
+       
+    fi
 
- else
-     echo "MySQL is already.... INSTALLED"    
-fi
 
 
  dnf list installed git
