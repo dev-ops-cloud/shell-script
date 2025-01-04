@@ -4,7 +4,7 @@ USERID=$(id -u)
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
-LOGS_FOLDER="/var/log/shell script-logs"
+LOGS_FOLDER="/var/log/shellscript-logs"
 LOG_FILE=$(echo $0 | cut -d "." -f1)
 TIMESTAMP=$(date +%y-%m-%d-%H-%M-%S)
 LOG_FILE_NAME="$LOGS_FOLDER/$LOG_FILE-$TIMESRAMP.log"
@@ -20,7 +20,7 @@ VALIDATE(){
      fi
 }  
 
-echo "Script started executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
+ echo "Script started executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
 
 if [ $USERID -ne 0 ]
 then
@@ -28,13 +28,13 @@ then
     exit 1 #other than 0
  fi
 
- dnf list installed mysql &>>$LOG_FILE_NAME
+  dnf list installed mysql &>>$LOG_FILE_NAME
 
  if [ $? -ne 0 ]
  then
-     dnf install mysql -y &>>$LOG_FILE_NAME
+    dnf install mysql -y &>>$LOG_FILE_NAME
      VALIDATE $? "Installing MySQL"
-else
+ else
           echo -e "MySQL already.... $Y INSTALLED"
        
     fi
