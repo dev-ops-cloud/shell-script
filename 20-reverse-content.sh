@@ -1,6 +1,6 @@
 #!/bin/bash
 
-var"10 20 30 40 50"
+echo=$(var"10 20 30 40 50")
 set --$var; unset a
 for((i=$#;i>0;i--))
 do
