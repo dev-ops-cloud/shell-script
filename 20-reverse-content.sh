@@ -1,12 +1,13 @@
 #!/bin/bash
 
-SCHOOL=("Test 1" "Test 2" "Test 3")
-#index starts from 0, size is 3
+for i in {0..5}
+do
+   echo $i
+done 
 
-echo "First exam: ${Test[0]}"
-echo "second exam: ${Test[1]}"
-echo "Third exam: ${Test[2]}"
-
-echo "All exams are: ${Test[@]}"
-
+# echo 1
+# echo 2
+# echo 3
+# echo 4
+# echo 5
 
