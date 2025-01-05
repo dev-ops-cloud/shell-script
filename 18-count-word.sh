@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILE_NAME="/home/devops/daws-82s/repo/shell-script/18-count-word.sh"
+FILE_NAME="/home/ec2-user/shell-script/18-count-word.sh"
 Number_of_Lines= $( WC --lines < $FILE_NAME )
 Number_of_words= $( wc --word < $FILE_NAME ) 
 
