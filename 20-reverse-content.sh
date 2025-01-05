@@ -1,7 +1,10 @@
 #!/bin/bash
 
-rev file.txt > reversed_file.txt
-
-string="Hello World"
-reversed_string=$(echo "$string" | rev)
-echo "$reversed_string"
+var"10 20 30 40 50"
+set --$var; unset a
+for((i=$#;i>0;i--))
+do
+echo "printf '%s%s' "${a:+ }" "${!i}""
+   a=1
+ done
+ echo "reverse the numbers"  
