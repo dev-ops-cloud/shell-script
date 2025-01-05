@@ -1,11 +1,11 @@
 #!/bin/bash
 
-FILE_NAME="/home/ec2-user/shell-script/18-count-word.sh"
-Number_of_Lines= $( WC --lines < $FILE_NAME )
-Number_of_words= $( wc --word < $FILE_NAME ) 
+wc -w filename.txt
+echo "am learning devops with AWS" | wc -w
+#!/bin/bash
 
-echo "I am learning Devops with AWS Course"
-echo "First we finished linux commands"
-echo "we started connecting database, backend and frontend servers"
-echo "we completed linux project"
-echo "we completed shell-script expense project too"
+filename="$18-count-word.sh"
+
+word_count=$(wc -w < "$filename")
+
+echo "The file '$filename' contains $word_count words."
