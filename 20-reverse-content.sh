@@ -1,10 +1,12 @@
 #!/bin/bash
 
-echo=$(var"10 20 30 40 50")
-set --$var; unset a
-for((i=$#;i>0;i--))
-do
-echo "printf '%s%s' "${a:+ }" "${!i}""
-   a=1
- done
- echo "reverse the numbers"  
+input_file="$1"
+
+# Get the number of columns in the file
+n_cols=$(head -1 "$input_file" | wc -w)
+
+# Transpose the file
+for i in $(seq 1 "$n_cols"); do
+  cut -d ' ' -f "$i" "$input_file" | tr '\n' ' '
+  echo
+done
