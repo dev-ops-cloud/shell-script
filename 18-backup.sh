@@ -44,8 +44,6 @@ echo "Script started executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
 
 FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS)
 
-echo "Files are: $FILES"
-
 if [ -n "$FILES" ]  # true if there are files to zip
 then
      echo "Files are: $FILES"
@@ -59,7 +57,7 @@ then
             echo "Deleting file: $filepath" &>>$LOG_FILE_NAME
             rm -rf $filepath
             echo "Deleted file: $filepath"
-        done <<< $FILES_TO_DELETE
+        done <<< $FILES
      else
          echo -e "$R Error:: $N Failed to create zip file"
          exit 1
