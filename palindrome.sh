@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "Enter a string: " 'input_string' :madam
+read -p "Enter a string: " 'input_string'
 if [[ "$input_string" == "$(rev <<< "$input_string")" ]]; 
 then
     echo "$input_string is a palindrome"
