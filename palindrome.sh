@@ -1,21 +1,9 @@
 #!/bin/bash
 
-echo "Enter a number: 1223"
-read number
-reverse=0
-original=$number
-
-while [ $number -ne 0 ]
-do
-    remainder=$(( $number % 10 ))
-    reverse=$(( $reverse * 10 + $remainder ))
-    number=$(( $number / 10 ))
-
-done
-
-if [ $original -eq $reverse ]
+read -p "Enter a string: " 'input_string' :madam
+if [[ "$input_string" == "$(rev <<< "$input_string")" ]]; 
 then
-    echo "$original is a palindrome."
+    echo "$input_string is a palindrome"
 else
-    echo "$original is not a palindrome."
+    echo "$input_string is not a palindrome"
 fi
