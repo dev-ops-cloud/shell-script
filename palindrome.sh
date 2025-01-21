@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Enter a number: 1221"
+echo "Enter a number: 1223"
 read number
 reverse=0
 original=$number
