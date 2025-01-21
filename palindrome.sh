@@ -7,3 +7,5 @@ then
 else
     echo "$input_string is not a palindrome"
 fi
+
+# once we did push and pull it will ask enter a string then we need type examples like madam is a palindrome and pallavi is not a pallindrome
