@@ -10,3 +10,5 @@ echo "1111" >> myfile.txt
 echo "abcd" >> myfile.txt
 
 sort myfile.txt | uniq -c
+
+# once we did pull and push then we need type cat myfile.txt
