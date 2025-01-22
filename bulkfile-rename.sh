@@ -12,9 +12,7 @@ echo "./Xft2-2.1.13.pkg" > myfile.txt
 echo "./jasper-1.900.1.pkg" >> myfile.txt
 echo "./xorg-libXrandr-1.2.3.pkg" >> myfile.txt
 
-for i in ./*.pkg; do
-    mv "$i" "${i%-[0-9.]*.pkg}.pkg"
-done
+rename _ pkg.txt *pkg*
 
 # mv rename.x
 
