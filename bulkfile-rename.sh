@@ -1,9 +1,16 @@
 #!/bin/bash
 
-echo "123.sh" > myfile.txt
-echo "abc.sh" >> myfile.txt
-echo "456.sh" >> myfile.txt
-echo "xyz.sh" >> myfile.txt
+echo "pallavi 123.sh" > myfile.txt
+echo "pallavi 345.sh" >> myfile.txt
+echo "pallavi 567.sh" >> myfile.txt
+echo "pallavi 789.sh" >> myfile.txt
+
+${var/Pattern/Replacement}
+
+for file in pallavi-*_sh
+do
+    mv -i "${file}" "${file/-.-/-@-}"
+done
 
 # dir="/c/devops/daws-82s/repo/shell-script/bulkfile-rename.sh"
 
