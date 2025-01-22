@@ -1,5 +1,5 @@
 #!/bin/bash
 
-file.txt= " AWS with DevOps"
+L1= " AWS with DevOps"
 
-grep -E ".{$(wc -w < file.txt)}" file.txt
+grep -E ".{$(wc -w < L1)}" L1
