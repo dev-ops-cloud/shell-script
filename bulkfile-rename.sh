@@ -5,7 +5,7 @@ echo "test 002" >> myfile.txt
 echo "test 003" >> myfile.txt
 echo "test 004" >> myfile.txt
 
-ls | while read -r myfile
+while read -r myfile
 do
         mv -v "$myfile" `echo $myfile | awk -F ' ' '{print $2}'`
 done
