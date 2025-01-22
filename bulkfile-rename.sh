@@ -1,11 +1,15 @@
 #!/bin/bash
 
-echo "test 001" > myfile.txt
-echo "test 002" >> myfile.txt
-echo "test 003" >> myfile.txt
-echo "test 004" >> myfile.txt
+# echo "test 001" > myfile.txt
+# echo "test 002" >> myfile.txt
+# echo "test 003" >> myfile.txt
+# echo "test 004" >> myfile.txt
 
-mv rename.sh
+echo "./Xft2-2.1.13.pkg" > myfile.txt
+echo "./jasper-1.900.1.pkg" >> myfile.txt
+echo "./xorg-libXrandr-1.2.3.pkg" >> myfile.txt
+
+# mv rename.x
 
 # while read -r myfile
 # do
