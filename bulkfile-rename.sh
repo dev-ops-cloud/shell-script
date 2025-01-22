@@ -1,18 +1,18 @@
 #!/bin/bash
 
-echo "pallavi 123.sh" > myfile.txt
-echo "pallavi 345.sh" >> myfile.txt
-echo "pallavi 567.sh" >> myfile.txt
-echo "pallavi 789.sh" >> myfile.txt
+echo "test 001" > myfile.txt
+echo "test 002" >> myfile.txt
+echo "test 003" >> myfile.txt
+echo "test 004" >> myfile.txt
 
-${var/Pattern/Replacement}
+# ${var/Pattern/Replacement}
 
-for file in pallavi-*_sh
-do
-    mv -i "${file}" "${file/-.-/-@-}"
-done
+# for file in pallavi-*_sh
+# do
+#     mv -i "${file}" "${file/-.-/-@-}"
+# done
 
-# dir="/c/devops/daws-82s/repo/shell-script/bulkfile-rename.sh"
+# # dir="/c/devops/daws-82s/repo/shell-script/bulkfile-rename.sh"
 
 # timestamp=$(date +%Y%m%d)
 
