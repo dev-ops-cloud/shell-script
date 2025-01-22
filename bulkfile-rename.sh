@@ -5,10 +5,12 @@ echo "test 002" >> myfile.txt
 echo "test 003" >> myfile.txt
 echo "test 004" >> myfile.txt
 
-while read -r myfile
-do
-        mv -v "$myfile" `echo $myfile | awk -F ' ' '{print $2}'`
-done
+mv rename.sh
+
+# while read -r myfile
+# do
+#         mv -v "$myfile" `echo $myfile | awk -F ' ' '{print $2}'`
+# done
 
 # ${var/Pattern/Replacement}
 
