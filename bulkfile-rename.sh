@@ -9,6 +9,8 @@ echo "./Xft2-2.1.13.pkg" > myfile.txt
 echo "./jasper-1.900.1.pkg" >> myfile.txt
 echo "./xorg-libXrandr-1.2.3.pkg" >> myfile.txt
 
+sedrename 's|\(.*\)\(-[0-9.]*\.pkg\)|\1\2|' *.pkg
+
 # mv rename.x
 
 # while read -r myfile
