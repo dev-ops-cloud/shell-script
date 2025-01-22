@@ -4,6 +4,9 @@
 # echo "test 002" >> myfile.txt
 # echo "test 003" >> myfile.txt
 # echo "test 004" >> myfile.txt
+dir="/c/devops/daws-82s/repo/shell-script/bulkfile-rename.sh"
+
+timestamp=$(date +%Y%m%d)
 
 echo "./Xft2-2.1.13.pkg" > myfile.txt
 echo "./jasper-1.900.1.pkg" >> myfile.txt
