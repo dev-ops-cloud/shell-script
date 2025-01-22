@@ -4,15 +4,17 @@
 # echo "test 002" >> myfile.txt
 # echo "test 003" >> myfile.txt
 # echo "test 004" >> myfile.txt
-dir="/c/devops/daws-82s/repo/shell-script/bulkfile-rename.sh"
+# dir="/c/devops/daws-82s/repo/shell-script/bulkfile-rename.sh"
 
-timestamp=$(date +%Y%m%d)
+# timestamp=$(date +%Y%m%d)
 
 echo "./Xft2-2.1.13.pkg" > myfile.txt
 echo "./jasper-1.900.1.pkg" >> myfile.txt
 echo "./xorg-libXrandr-1.2.3.pkg" >> myfile.txt
 
-sed rename 's|\(.*\)\(-[0-9.]*\.pkg\)|\1\2|' *.pkg
+for i in ./*.pkg; do
+    mv "$i" "${i%-[0-9.]*.pkg}.pkg"
+done
 
 # mv rename.x
 
