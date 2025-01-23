@@ -1,5 +1,5 @@
 #!/bin/bash
 
-123.txt
-abc.txt
-xyz.txt
+echo "123" > myfile.txt
+echo "abc" >> myfile.txt
+echo "xyz" >> myfile.txt
