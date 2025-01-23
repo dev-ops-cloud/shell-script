@@ -4,7 +4,7 @@ dir="/home/ec2-user/shell-script"
 
 timestamp=$(date +%Y%m%d)
 
-for file in "$dir"/*.png;
+for file in "$dir"/*.txt;
 do 
  if [ -f "$file" ]; then
  
@@ -16,7 +16,7 @@ do
   else
        echo "file is not found"
        exit 1
-       
+
  fi
  done
 
