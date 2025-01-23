@@ -4,7 +4,7 @@ dir="/home/ec2-user/shell-script"
 
 timestamp=$(date +%Y%m%d)
 
-for file in "$dir"/*.txt;
+for file in "$dir"/*.png;
 do 
  if [ -f "$file" ]; then
  
