@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dir="/home/ec2-user/shell-script"
+dir="/c/devops/daws-82s/repo/shell-script"
 
 timestamp=$(date +%Y%m%d)
 
